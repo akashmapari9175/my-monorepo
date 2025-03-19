@@ -11,6 +11,7 @@ const config: Config = {
 
   // Set the production url of your site here
   url: "https://my-monorepo-docusaurus.vercel.app/",
+  //https://my-monorepo-docusaurus.vercel.app/
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/docs/",
@@ -37,7 +38,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          routeBasePath: "/",
+          // routeBasePath: "/",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
