@@ -1,7 +1,15 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  async rewrites() {
+    return [
+      {
+        source: "/docs/:path*",
+        destination: "/docusaurus/:path*", // Ensure this is correct
+      },
+    ];
+  },
 };
 
 export default nextConfig;
