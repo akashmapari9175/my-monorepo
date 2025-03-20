@@ -1,9 +1,8 @@
 {
-  "version": 2,
   "rewrites": [
     {
-      "source": "/docs/(.*)",
-      "destination": "/apps/docusaurus/build/$1"
+      "source": "/docs/:path*",
+      "destination": "https://my-monorepo-docusaurus.vercel.app/:path*"
     }
   ]
 }
